@@ -4,24 +4,52 @@
 
 @layer base {
   body {
-    background-color: #faf9f6;
-    color: #1f2421;
+    background-color: #fbf9f4;
+    color: #17241d;
     overflow-x: hidden;
   }
 }
 
+/* Subtle agricultural soil grid background pattern */
+.agri-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(29, 71, 55, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(29, 71, 55, 0.04) 1px, transparent 1px);
+}
+
+.agri-dots {
+  background-image: radial-gradient(rgba(38, 92, 71, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Glassmorphism panel */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.glass-panel-dark {
+  background: rgba(15, 41, 30, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(46, 114, 87, 0.35);
+}
+
 /* Custom smooth scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
   background: #f1ede4;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #b5c7bc;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #7c9885;
 }
